@@ -1,0 +1,39 @@
+[
+	{
+		"card": "Bangalore's Cold Steel",
+		"price": 5.00,
+		"image": "./images/bangalore.jpg",
+		"qty_available": 75
+	},
+	{
+		"card": "Pathfinder's Boxing Gloves",
+		"price": 10.00,
+		"image": "./images/pathfinder.jpg",
+		"qty_available": 50
+	},
+	{
+		"card": "Gibraltar's War Club",
+		"price": 20.00,
+		"image": "./images/gibraltar.jpg",
+		"qty_available": 20
+	},
+	{
+		"card": "Bloodhound's Raven's Bite",
+		"price": 25.00,
+		"image": "./images/bloodhound.jpg",
+		"qty_available": 10
+	},
+	{
+		"card": "Octane's Butterfly Knife",
+		"price": 100.00,
+		"image": "./images/octane.jpg",
+		"qty_available": 10
+	},
+	{
+		"card": "Wraith's Kunai",
+		"price": 500.00,
+		"image": "./images/wraith.jpg",
+		"qty_available": 5
+	}
+    
+]

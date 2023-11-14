@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title -->
+    <title>Thank you for ordering!</title>
+
+    <!-- Bootstrap CSS and JS -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Send GET request to server for product data -->
+    <script src="./products.js"></script>
+</head>
+<body>
+    <!-- Web Header -->
+    <div class="jumbotron text-center custom-gray-bg text-dark p-4">
+        <h1 class="h2", style="color:white;">Welcome to Heirloom Harbor</h1>
+        <!-- Use inline styles sparingly; consider moving styles to a CSS file -->
+        <p class="lead" style="color:white;">Explore our diverse collection!</p>
+        <div class="mt-4">
+            <a href="./index.html" class="btn btn-outline-primary btn-lg mr-3">Home</a>
+            <a href="./store.html" class="btn btn-outline-primary btn-lg">Store</a>
+        </div>
+    </div>
+
+    <!-- Invoice Table Section -->
+    <div class="container">
+        <table class="table">
+            <!-- Table Header -->
+            <thead class="thead-dark">
+                <tr>
+                    <!-- Define headers -->
+                    <th>Image</th>
+                    <th>Item</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Extended Price</th>
+                </tr>
+            </thead>
+            <!-- Table Body - Product rows will be added dynamically using JavaScript -->
+            <tbody id="invoiceTable"></tbody>
+            <!-- Table Footer - Subtotal, Tax, Shipping, and Total -->
+            <tfoot>
+                <tr>
+                    <td colspan="4">Sub-total</td>
+                    <td id="subtotal_cell">$0.00</td>
+                </tr>
+                <tr>
+                    <td colspan="4">Tax @ 5.75%</td>
+                    <td id="tax_cell">$0.00</td>
+                </tr>
+                <tr>
+                    <td colspan="4">Shipping</td>
+                    <td id="shipping_cell">$0.00</td>
+                </tr>
+                <tr>
+                    <td colspan="4"><strong>Total</strong></td>
+                    <td id="total_cell"><strong>$0.00</strong></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    
+    <!-- JavaScript Script for Invoice Logic -->
+    <script src="invoice.js" type="module"></script>
+</body>
+</html>
